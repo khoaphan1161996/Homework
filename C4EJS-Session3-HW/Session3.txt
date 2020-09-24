@@ -1,0 +1,59 @@
+Câu 1. Variable Swap
+3 cách hoán đổi:
+-Destructuring assignment
+    [a, b] = [b, a];
+Ví dụ let a = 1  let b =2
+Ở bước đầu tiên, ở phía bên phải của cấu trúc, một mảng tạm thời [b, a] ( [2, 1]) được tạo.
+Khi đó, quá trình hủy cấu trúc của mảng tạm thời xảy ra: [a, b] = [2, 1]. Biến a được gán với 2 và b với 1. Việc hoán đổi a và b đã được thực hiện.
+
+-Temporary variable
+Hãy hoán đổi giá trị của các biến a và b bằng cách sử dụng một biến tạm thời
+
+-Addition and difference
+-Sử dụng toán tử toán học
+
+3 Ví dụ về 3 cách:
+let a = 1;
+let b = 2;
+[a, b] = [b, a];
+console.log(a); // => 2
+console.log(b); // => 1
+
+let a = 1;
+let b = 2;
+let c = temp
+temp = a   // temp dc gán là a
+a = b      // a dc gán là b 
+b = temp   // cuối cùng b dc gán là temp ( có giá trị là a)
+console.log(a); // => 2
+console.log(b); // => 1
+
+let a = 1
+let b = 2
+a = a + b    // a = 1 + 2 
+b = a - b    // b = 1 + 2 -2 = 1
+a = a - b    // a = 3 - 1 = 2
+console.log(a); // => 2
+console.log(b); // => 1
+
+Câu 2 : Split String into Array
+Dùng hàm  <tên biến>.split   . Hàm này có tác dụng:
+-Chia chuỗi thành chuỗi.
+-Trả về chúng trong một mảng.
+-Lấy 2 tham số, cả hai tham số là tùy chọn: string.split(separator, limit) .
+-Không thay đổi chuỗi gốc.
+-Chỉ có thể được sử dụng cho chuỗi.
+
+Ví dụ cụ thể:
+let array = [1, 2, 3, "hello world", 4.12, true]
+console.log(array)  
+// => [1, 2, 3, "hello world", 4.12, true]
+let str = array.toString()
+str.split(",")
+console.log(str)
+// => 1,2,3,hello world,4.12,true
+
+Câu 3 : 
+const a = [4, 5, 7, -8];
+console.log(...a);
+// => 4 5 7 -8
