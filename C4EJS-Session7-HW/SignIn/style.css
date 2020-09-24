@@ -149,12 +149,15 @@ html, body {
     text-decoration: none;
 }
 
+.cot1 {
+    margin-right: 83px;
+}
+
 .cot3 {
     align-items: center;
     display: flex;
     flex-direction: column ;
     margin-left: 178px;
-    margin-right:150px;
 }
 
 .cot3 img{
@@ -166,6 +169,11 @@ html, body {
     font-size: 14px;
     line-height: 17px;
     color: #BDBDBD;
+}
+
+.space {
+    margin-left: 100px;
+    margin-right: 145px;
 }
 
 .cot4 i {
