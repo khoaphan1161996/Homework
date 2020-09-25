@@ -100,3 +100,18 @@
 // 2. Write a JS function that accepts a string as a parameter and find the longest word within the string.
 // EX string: "Web Development Tutorial"
 // EX output: "Development"
+let n = prompt("Enter string")
+n = n.split(" ")    
+console.log(n)
+function output(text){
+    let max = 0
+    let a = ""
+    for(let i = 0;i<text.length;i++){
+        if(max<text[i].length){
+            max = text[i].length
+            a = text[i]
+        }
+    }
+    console.log(a)
+}
+output(n)
