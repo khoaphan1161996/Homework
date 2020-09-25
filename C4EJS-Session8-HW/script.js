@@ -92,12 +92,10 @@
 // Hint: you can iterate through an string (character by character) by doing the same as array([])
 
 // function removeDollarSign(text){
-//     for(let i =0;i<)
-    
-// };
+//     text= text.split("$").join("")
+//     console.log(text)
+// }
 // removeDollarSign(`$80% percent of $life is to show $up`)
-
-
 
 // 2. Write a JS function that accepts a string as a parameter and find the longest word within the string.
 // EX string: "Web Development Tutorial"
