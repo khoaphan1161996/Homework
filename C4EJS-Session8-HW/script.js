@@ -43,7 +43,7 @@
 //     setTimeout(function(){
 //         catLong(myflock)
 //         motthang(myflock,i)
-//     },second)
+//     },5000)
 //     second+=5000
 // }
 
@@ -92,26 +92,45 @@
 // Hint: you can iterate through an string (character by character) by doing the same as array([])
 
 // function removeDollarSign(text){
-//     text= text.split("$").join("")
+//     text= text.split("$").join("")   // // chia mảng ngay $ và biến $ thành "," sau đó join tất cả "" các phần tử lại
 //     console.log(text)
+// }
+// removeDollarSign(`$80% percent of $life is to show $up`)
+
+// 2
+// Tại vị trí nào không phải dấu dollar thì push vào mảng
+// function removeDollarSign(text){
+//     let string = text
+//     string = string.split("")
+//     let newstring=[]
+//     for(let i = 0 ;i < string.length; i ++){
+//         if(string[i]!="$"){
+//             newstring.push(string[i])
+//         }
+//     }
+//     let res = ""
+//     for(let i = 0 ;i < newstring.length; i ++){
+//         res += newstring[i]
+//     }
+//     console.log(res)
 // }
 // removeDollarSign(`$80% percent of $life is to show $up`)
 
 // 2. Write a JS function that accepts a string as a parameter and find the longest word within the string.
 // EX string: "Web Development Tutorial"
 // EX output: "Development"
-let n = prompt("Enter string")
-n = n.split(" ")    
-console.log(n)
-function output(text){
-    let max = 0
-    let a = ""
-    for(let i = 0;i<text.length;i++){
-        if(max<text[i].length){
-            max = text[i].length
-            a = text[i]
-        }
-    }
-    console.log(a)
-}
-output(n)
+// let n = prompt("Enter string")
+// n = n.split(" ")    
+// console.log(n)
+// function output(text){
+//     let max = 0
+//     let a = ""
+//     for(let i = 0;i<text.length;i++){
+//         if(max<text[i].length){
+//             max = text[i].length
+//             a = text[i]
+//         }
+//     }
+//     console.log(a)
+// }
+// output(n)
