@@ -110,50 +110,42 @@
 // // 11. Take a look at the following UI
 // // 11.1. Write an HTML for the UI above, create and link a JS file to it
 // // 11.2. Get (Read) the 'Upper it!!!!
-// function readupper(){
-//     let upper_btn = document.getElementById("upper_btn")
-//     console.log(upper_btn)
-// }
-// readupper()
+    let upper_btn = document.getElementById("upper_btn")
+    console.log(upper_btn)
 
 // // 11.3. Catch event when 'Upper it!!!!' button is clicked
-// // function clickupper(){
-// //     upper_btn.addEventListener('click',function(e){
-// //         console.log(e.target)
-// //     })
-// // }
-// // clickupper()
-
 // // 11.4. Get(Read) 'Enter your name' input
-// function readname_input(){
-//     let name_input = document.getElementById("name_input")
-//     console.log(name_input)
-// }
-// readname_input()
+    let name_input = document.getElementById("name_input")
+    console.log(name_input)
 
 // // 11.5. Get (Read) user name from the input
-
-
+// // 11.6. Convert user’s name to uppercase
 // // 11.7. Get (Read) the ‘Your result will appear here’ tag
-// function readresult(){
-//     let result = document.getElementById("result_div")
-//     console.log(result)
-// }
-// readresult()
+// // 11.8. Update the ‘Your result will appear here’ to the username
+// uppercase version
+    let result = document.getElementById("result_div")
+    console.log(result)
 
+    upper_btn.addEventListener('click',function(e){
+        console.log(e.target)
+        result.innerHTML=name_input.value.toUpperCase()
+        console.log(name_input.value.toUpperCase())
+    })
+
+    
 
 
 // 12. Take a look at a list of belongings
 // 12.1. In JS, Initialize a variable named items to store the data above, log/print
 // it out
-let menu = ["Backpack", "MiBand watch","Ring"]
-console.log(menu)
+// let menu = ["Backpack", "MiBand watch","Ring"]
+// console.log(menu)
 
 // 12.2. In HTML, create an &lt;ul&gt; with some test items. If you have not worked
 // with unordered list before, watch the ‘HTML - List and Table’ video or see this
 // quick example.
 // 12.3. Get (Read) the list from DOM
-let readlist = document.getElementById("list")
-console.log(readlist)
+// let readlist = document.getElementById("list")
+// console.log(readlist)
 
 // 12.4. Show ALL of the data in items, each item is a <li> tag
