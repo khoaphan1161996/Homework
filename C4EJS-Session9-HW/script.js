@@ -6,6 +6,12 @@
 
 // 2. Instead of using setTimeOut to create a timer, we can use setInterval for shorter
 // code
+// let second = 0
+//  setInterval(function(){
+//     console.log(second)
+//     second= second+1 
+//  },1000)
+
 // 3. Read about function scope in this link then answer the following question
 // 3.1. Can a variable declared by let, in a function still exists after the function
 // finishes running?
@@ -101,4 +107,53 @@
 // let b = prompt("nhập mong muốn của bạn trong năm nay đi")
 // user(a,b)
 
-// 11. Take a look at the following UI
+// // 11. Take a look at the following UI
+// // 11.1. Write an HTML for the UI above, create and link a JS file to it
+// // 11.2. Get (Read) the 'Upper it!!!!
+// function readupper(){
+//     let upper_btn = document.getElementById("upper_btn")
+//     console.log(upper_btn)
+// }
+// readupper()
+
+// // 11.3. Catch event when 'Upper it!!!!' button is clicked
+// // function clickupper(){
+// //     upper_btn.addEventListener('click',function(e){
+// //         console.log(e.target)
+// //     })
+// // }
+// // clickupper()
+
+// // 11.4. Get(Read) 'Enter your name' input
+// function readname_input(){
+//     let name_input = document.getElementById("name_input")
+//     console.log(name_input)
+// }
+// readname_input()
+
+// // 11.5. Get (Read) user name from the input
+
+
+// // 11.7. Get (Read) the ‘Your result will appear here’ tag
+// function readresult(){
+//     let result = document.getElementById("result_div")
+//     console.log(result)
+// }
+// readresult()
+
+
+
+// 12. Take a look at a list of belongings
+// 12.1. In JS, Initialize a variable named items to store the data above, log/print
+// it out
+let menu = ["Backpack", "MiBand watch","Ring"]
+console.log(menu)
+
+// 12.2. In HTML, create an &lt;ul&gt; with some test items. If you have not worked
+// with unordered list before, watch the ‘HTML - List and Table’ video or see this
+// quick example.
+// 12.3. Get (Read) the list from DOM
+let readlist = document.getElementById("list")
+console.log(readlist)
+
+// 12.4. Show ALL of the data in items, each item is a <li> tag

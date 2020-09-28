@@ -1,0 +1,23 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.container{
+    margin-top: 10px;
+    margin-left: 5px;
+}
+#top {
+    display: flex;
+    align-items: center;
+}
+#name_input {
+    margin-right: 10px;
+    width: 200px;
+}
+#upper_btn{
+    font-size: 12px;
+}
+#result_div {
+    font-size: 23px;
+}
