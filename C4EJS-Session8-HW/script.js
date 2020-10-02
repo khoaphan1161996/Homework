@@ -43,7 +43,7 @@
 //     setTimeout(function(){
 //         catLong(myflock)
 //         motthang(myflock,i)
-//     },5000)
+//     },second)
 //     second+=5000
 // }
 
