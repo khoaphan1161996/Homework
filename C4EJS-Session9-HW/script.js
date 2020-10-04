@@ -170,7 +170,6 @@ function them (callback){
         items.push(inputvalue)
         console.log(items)
         list.insertAdjacentHTML(`beforeend`,`<li><span>${inputvalue}</span><button class="btn_remove">Remove</button></li>`)
-        console.log(list)
         input.value = ""
         callback()
     })

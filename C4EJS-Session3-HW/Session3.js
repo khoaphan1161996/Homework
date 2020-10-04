@@ -165,6 +165,7 @@
 //Bài 10: (Optional) Write a script asking users to enter a sequence of names, separated by commas (,), Create a new array containing the names, each surrounded with <>
 // let nhap = prompt(["Enter a sequence of names"])
 // let a = nhap.split(",")
+// let a = [4 ,3,"haha"]
 // let f = ""
 // for(i=0;i<a.length;i++){
 //     f += `<${a[i]}>,`
@@ -173,6 +174,16 @@
 
 // let result = a.map(x =>"<" + x + ">")
 // console.log(result)
+
+// let res = a.map(function(val,i,arr){
+//     return val = "<"+val+">"
+// })
+// console.log(res)
+
+// let res = a.map((val,i,arr)=>{
+//     return val = "<"+val+">"
+// })
+// console.log(res)
 
 //Bài 11: (Optional) Write a script asking users to enter a sequence of Numbers, separated by commas (,). Create a new array containing only the odd Numbers of the entered sequence.
 
