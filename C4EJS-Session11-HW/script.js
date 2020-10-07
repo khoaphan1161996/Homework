@@ -72,16 +72,14 @@ btn_back.addEventListener('click', function(){
 })
 
 let btn_click = document.getElementById("btn_click")
-btn_click.addEventListener('click', find)
-function find(){
-    console.log(pokemonname)
-        let input_value = input.value
-        for(let i = 0 ; i < pokemonname.length ; i ++){
-            if(pokemonname[i] == input_value){
-                content.textContent = ""
-                get1Pokemon(i)
-            }
+btn_click.addEventListener('click', function(){
+    let input_value = input.value
+    for(let i = 0 ; i < pokemonname.length ; i ++){
+        if(pokemonname[i] == input_value.toLowerCase()){
+            content.textContent = ""
+            get1Pokemon(i)
         }
     }
+})
 
 // Viết 1 tập hợp có tên sau đó so sánh với click input
