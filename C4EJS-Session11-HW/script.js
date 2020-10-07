@@ -1,15 +1,20 @@
 const root_url = "https://pokeapi.co/api/v2/pokemon"
 const content = document.getElementById("content")
-let datas=[]
+let datas = []
+let pokemonname = []
 
 async function getPokemon(){
     for(let i = 1 ; i <= 54 ; i++){
         const res = await fetch(root_url + `/${i}`);
         const data = await res.json();
         datas.push(data)
+        pokemonname.push(data.name)
     }
     content.insertAdjacentHTML('beforeend', createPokemon(datas))
+    console.log(pokemonname)
+    console.log(datas)
     click()
+    datas = []
 }
 
 getPokemon()
@@ -62,12 +67,21 @@ function create1Pokemon(list_pokemon,i){
 let btn_back = document.getElementById("btn_back")
 btn_back.addEventListener('click', function(){
     content.innerHTML = ""
+    pokemonname = []
     getPokemon()
 })
 
 let btn_click = document.getElementById("btn_click")
-btn_click.addEventListener('click', function(){
-    let input = document.getElementById("input")
-    let input_value = input.value
-    
-})
+btn_click.addEventListener('click', find)
+function find(){
+    console.log(pokemonname)
+        let input_value = input.value
+        for(let i = 0 ; i < pokemonname.length ; i ++){
+            if(pokemonname[i] == input_value){
+                content.textContent = ""
+                get1Pokemon(i)
+            }
+        }
+    }
+
+// Viết 1 tập hợp có tên sau đó so sánh với click input

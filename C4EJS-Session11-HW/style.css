@@ -5,7 +5,7 @@
     
 }
 
-#main {
+body {
     background: linear-gradient(to right, rgb(245, 237, 237) , rgb(238, 238, 184));
 }
 
@@ -18,7 +18,6 @@
 
 #headertop {
     margin-bottom: 20px;
-    margin-right: 90px;
 }
 
 #content {
