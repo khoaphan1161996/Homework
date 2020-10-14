@@ -29,6 +29,35 @@
 // leftAngledTriangle(4)
 // leftAngledTriangle(6)
 
+// 4. Chessboard
+// Write a program that creates a string that represents an n×n grid, using newline characters to separate lines. At each position of the grid there is either a space or a "#" character. The characters should form a chessboard.This is an example of 8x8 chessboard:
+// function chessBoard(n,string1,string2){
+//     let boardodd = ""
+//     let boardeven = ""
+//     for(let i = 1 ; i <= n; i++){
+//         if(i%2 !=0){
+//             boardodd += string1+ " "
+//         }
+//         else boardodd += string2+ " "
+//     }
+
+//     for(let i = 1 ; i <= n; i++){
+//         if(i%2 !=0){
+//             boardeven += string2+ " "
+//         }
+//         else boardeven += string1+ " "
+//     }
+
+//     for(let i = 1 ; i <= n; i++){
+//         if(i%2 !=0){
+//             console.log(boardodd)
+//         }
+//         else console.log(boardeven)
+//     }
+// }
+
+// chessBoard(8,"#","*")
+// chessBoard(8,'^','%')
 
 // 5. Fizz Buzz
 // Write a program that uses console.log to print all the numbers from 1 to n, with two exceptions. For numbers divisible by 3, print "Fizz" instead of the number, and for numbers divisible by 5 (and not 3), print "Buzz" instead. When you have that working, modify your program to print "FizzBuzz" for numbers that are divisible by both 3 and 5 (and still print "Fizz" or "Buzz" for numbers divisible by only one of those).
