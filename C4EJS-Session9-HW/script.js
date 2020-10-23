@@ -165,17 +165,25 @@ let add_btn = document.getElementById("add_btn")
 // 12.10. Update UI (HTML) to reflect the update of items Array
 // 12.11. Reset the input after adding new item
 function them (callback){
-    add_btn.addEventListener('click', function(){
         let inputvalue = input.value
         items.push(inputvalue)
         console.log(items)
         list.insertAdjacentHTML(`beforeend`,`<li><span>${inputvalue}</span><button class="btn_remove">Remove</button></li>`)
         input.value = ""
         callback()
-    })
     
 }
-them(xoa)
+
+add_btn.addEventListener('click',function(){
+    them(xoa)
+})
+
+input.addEventListener(`keyup`, (e)=>{
+    if(e.key == `Enter`){
+        them(xoa)
+    }
+})
+
 xoa()
 // 12.12. Add remove button for each item
 // 12.13. Register to each ‘remove’ buttons’ event 

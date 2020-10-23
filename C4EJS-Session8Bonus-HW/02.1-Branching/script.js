@@ -29,7 +29,7 @@
 
 // console.log(isNarcissistic(153))
 
-// 2. Quadratic expression Calculate
+// 3. Quadratic expression Calculate
 // Take a b c as arguments then solve Quadratic Expression, print delta's status & solution(s)
 // let a = Number(prompt("nhap a"))
 // while(isNaN(a) || a==0 ){
@@ -57,13 +57,16 @@
 //     console.log("Phuong trinh vo nghiem")
 // } 
 
-// 3. Triangle and Parallelogram Area Finder
+// 4. Triangle and Parallelogram Area Finder
 // Write a function that accepts base (decimal), height (decimal) and shape ("triangle", "parallelogram") as input and calculates the area of that shape.
 // function areaShape(b,h,shape){
 //     if(shape=="triangle"){
 //         return 0.5*b*h
 //     }
-//     else return b*h
+//     else if(shape=="parallelogram"){
+//         return b*h
+//     }
+//     else return `triangle or parallelogram, please`
 // }
 
 
@@ -71,7 +74,7 @@
 // console.log(areaShape(8, 6, "parallelogram"))
 // console.log(areaShape(2.9, 1.3, "parallelogram"))
 
-// 4. Is the Word Singular or Plural?
+// 5. Is the Word Singular or Plural?
 // Create a function that takes in a word and determines whether or not it is plural. A plural word is one that ends in "s".
 // function isPlural(string){
 //     if(string[string.length-1]=="s"){
@@ -85,7 +88,7 @@
 // console.log(isPlural("dudes"))
 // console.log(isPlural("magic"))
 
-// 5. The pH Scale
+// 6. The pH Scale
 // Given a pH value, return whether that value is "alkaline" (greater than 7), "acidic" (less than 7), or "neutral" (7). Return "invalid" if the value given is less than 0 or greater than 14.
 // function pHName(pH){
 //     if(pH<7 && pH>=1){

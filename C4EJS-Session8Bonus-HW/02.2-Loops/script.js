@@ -29,6 +29,24 @@
 // leftAngledTriangle(4)
 // leftAngledTriangle(6)
 
+// 3. Isosceles triangle
+// Write a function that makes n calls to console.log to output the following triangle:
+// function Isoscelestriangle(n){
+//     for(let i = 1 ; i <= n ; i++){
+//         let res = ""
+//         for(let j = 1 ; j <= n+i-1 ; j++){
+//             if(j>n-i){
+//                 res += "#"
+//             }
+//             else res += " "
+//         }
+//         console.log(res)
+//     }
+// }
+
+// Isoscelestriangle(4)
+// Isoscelestriangle(6)
+
 // 4. Chessboard
 // Write a program that creates a string that represents an n×n grid, using newline characters to separate lines. At each position of the grid there is either a space or a "#" character. The characters should form a chessboard.This is an example of 8x8 chessboard:
 // function chessBoard(n,string1,string2){
@@ -78,6 +96,24 @@
 
 // fizzBuzz(10)
 // fizzBuzz(15)
+
+// 6. Return the Index of the First Vowel
+// Create a function that returns the index of the first vowel in a string
+// function firstVowel(string){
+//     string = string.toLowerCase()
+//     for(let i = 0 ; i <string.length;i++){
+//         if(string[i]=="a" || string[i]=="e" || string[i]=="i" || string[i]=="o" || string[i]=="u"){
+//             console.log(i)
+//             break
+//         }
+//     }
+    
+// }
+
+// firstVowel("apple")
+// firstVowel("hello")
+// firstVowel("STRAWBERRY")
+// firstVowel("pInEaPPLe")
 
 // 7. Count Instances of a Character in a String
 // Create a function that takes two strings as arguments and returns the number of times the first string (the single character) is found in the second string.

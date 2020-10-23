@@ -59,7 +59,8 @@ for(let i =0;i<timeSheetData.length;i++){
     tbody.insertAdjacentHTML(`beforeend`,`<tr>
     <td>${timeSheetData[i].Project}</td>
     <td>${timeSheetData[i].Task}</td>
-    <td>${timeSheetData[i].TimeSpent}</td><td><button class="btn_remove">X</button></td>
+    <td>${timeSheetData[i].TimeSpent}</td><td><button class="btn_remove">X</button>
+    <button class="btn_update">U</button></td>
     </tr>`)
 }
 document.getElementsByClassName("test")[0].remove()
@@ -89,7 +90,8 @@ function them(callback){
         tbody.insertAdjacentHTML(`beforeend`,`<tr>
         <td>${input_projvalue}</td>
         <td>${input_taskvalue}</td>
-        <td>${input_timevalue}</td><td><button class="btn_remove">X</button></td>
+        <td>${input_timevalue}</td><td><button class="btn_remove">X</button>
+        <button class="btn_update">U</button></td>
         </tr>`)
         input_proj.value = ""
         input_task.value = ""
@@ -109,9 +111,21 @@ function xoa(){
         btn_remove[i].addEventListener('click',function(e){
             // console.log(e.target.parentElement.parentElement)
             e.target.parentElement.parentElement.remove()
-            // console.log(timeSheetData)
         })
     }
 }
 
 xoa()
+
+// 9) Add Update, Clear buttons and U button in each line
+// 10) Implement update
+
+let btnclr = document.getElementById('btn_clr')
+
+btnclr.addEventListener('click', () => {
+    input_proj.value = ""
+    input_task.value = ""
+    input_time.value = ""
+})
+
+let btnupd = document.getElementsByClassName("btn_update")
