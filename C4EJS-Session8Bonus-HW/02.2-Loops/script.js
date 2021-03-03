@@ -166,3 +166,24 @@
 // reverseCase("Happy Birthday")
 // reverseCase("MANY THANKS")
 // reverseCase("sPoNtAnEoUs")
+
+// 10. Max Consecutive Ones
+// Given an binary array, find the maximum number of consecutive 1s in this array.
+// function findMaxConsecutiveOnes(array){
+//     let count = 0
+//     let res = 0
+//     for(let i = 0 ; i < array.length ; i++){
+//         if(array[i]==1){
+//             count += 1
+//             if(res<count){
+//                 res = count
+//             }
+//         }
+//         else(count = 0)
+//     }
+//     console.log(res)
+// }
+
+// findMaxConsecutiveOnes([1, 1, 0, 1, 1, 1])
+// findMaxConsecutiveOnes([0, 0, 1, 0, 1, 1])
+// findMaxConsecutiveOnes([0, 0])
