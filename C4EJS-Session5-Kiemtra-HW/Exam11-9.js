@@ -27,6 +27,21 @@
 // }
 // console.log(strupdate)
 
+// function strupdate(text){
+//     text = text.split("")
+//     let res = [" "]
+//     res = res.concat(text)
+//     console.log(res)
+//     for(let i = 0; i < res.length ; i++){
+//         if(res[i]==" "){
+//             res[i+1] = res[i+1].toUpperCase()
+//         }
+//     }
+//     console.log(res.join(""))
+// }
+
+// strupdate("khoa ne ha ne kkk")
+
 // Bài 3 : Viết một chương trình xóa các phần tử trùng của một mảng và in ra kết quả. (2đ)
 // Đầu vào: 1 mảng
 // Đầu ra: Mảng mới với các ký tự (hoặc số) không trùng nhau
